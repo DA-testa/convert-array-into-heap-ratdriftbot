@@ -16,7 +16,7 @@ def build_heap(data):
             swaps.append((i, maks_indeks))
             data[i], data[maks_indeks]=data[maks_indeks], data[i]
 
-            while maks_indeks* 2+1 < n:
+            while maks_indeks * 2+1 < n:
                 i=maks_indeks
                 maks_indeks= 2*i+1
                 if maks_indeks+1 < n and data [maks_indeks+1] < data[maks_indeks]:
