@@ -19,7 +19,7 @@ def build_heap(data):
             while maks_indeks* 2+1 < z:
                 i=maks_indeks
                 maks_indeks= 2*i+1
-                if maks_indeks+1 < and data [maks_indeks+1] < data[maks_indeks]:
+                if maks_indeks+1 < z and data [maks_indeks+1] < data[maks_indeks]:
                     maks_indeks = maks_indeks+1
 
                 if data[i]> data[maks_indeks]:
@@ -27,7 +27,7 @@ def build_heap(data):
                     data[i], data[maks_indeks]=data[maks_indeks], data[i]
         else:
             j=maks_indeks
-            while j*2 +1 < n:
+            while j*2 +1 < z:
                 i=j
                 j=2*i+1
                 if j+1< z and data [j+1]<data[j]:
