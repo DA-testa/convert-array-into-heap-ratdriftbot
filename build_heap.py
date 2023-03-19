@@ -2,8 +2,8 @@ def build_heap(data):
     swaps = []
     z=len(data)
 
-    for i in range(z//2-1, -1, -1):
-        maks_indeks =1
+    for i in range(z // 2-1, -1, -1):
+        maks_indeks =i
         kreisais_berns=2*i+1
         labais_berns = 2*i+2
 
