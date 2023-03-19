@@ -44,10 +44,10 @@ def build_heap(data):
 
 
 def main():
-    n = int(input())
+    z = int(input())
     data = list(map(int, input().split()))
 
-    assert len(data) == n
+    assert len(data) == z
 
    
     
