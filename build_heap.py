@@ -44,17 +44,30 @@ def build_heap(data):
 
 
 def main():
-    n = int(input())
-    data = list(map(int, input().split()))
+    text= input ("F or I:")
+    if "I" in text:
+        n = int(input())
+        data = list(map(int, input().split()))
+    elif "F" in text:
+        name=input()
+        path='./tests/'
+        file=path+name 
+        if "a" not in name:
+            try:
+                with open(file) as f:
+                    n=int(f.readline())
+                    data =list(map(int, f.readline().split()))
+            except Exception as e:
+                print("Error", str(e))
+                return
 
     assert len(data) == n
 
-   
-    
     swaps = build_heap(data)
 
-
+    assert len(swaps)<5 * len(data)
     print(len(swaps))
+    
     for i, j in swaps:
         print(i, j)
 
